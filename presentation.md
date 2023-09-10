@@ -106,6 +106,8 @@ The cat eats the  <b>mouse.</b>
 - How much time is spent per word while reading?
 - Different metrics: *First Pass*, *Go Past*, etc.
 - Generally: Predictable word ~ short reading time
+  - I.e. we "read over" words that are predictable
+- Measured in differ
 
 **TODO: IMAGE**
 
@@ -123,7 +125,7 @@ The cat eats the  <b>mouse.</b>
 <div style="font-size:110%">
 
 The coach chided the <u>player tossed the frisbee by the opposing team</u>.
-The coach chided <u>the player tossed the frisbee</u> **by** the opposing team.
+The coach chided <u>the player tossed the frisbee</u> ***by*** the opposing team.
 
 </div>
 
@@ -136,6 +138,8 @@ The coach chided <u>the player tossed the frisbee</u> **by** the opposing team.
 
 # Context influences LSC-Effect
 
+**TODO: Leave this out?**
+
 <div class="row" style="font-size:75%">
 <div class="column">
 
@@ -143,7 +147,7 @@ Mit **(langweiligen Anekdoten | spannenden Geschichten)** überzieht der erste R
 
 <i></i>
 </div>
-<div class="column" style="margin-left:25px">
+<div class="column" style="margin-left:25px;color:#bbbbbb;">
 
 The first speaker exceeds his time limit with **(boring anecdotes | exciting stories)**. The audience listens to him **(yawning | attentively)**. After the three-hour talk, he has no more energy, and hands over to the next speaker.
 
@@ -157,9 +161,9 @@ Der nächste Redner ärgert sich über alle Maßen,<br>als ihm der erste Redner 
 
 OR
 
-Der nächste Redner ärgert sich über alle Maßen,<br>als ihm <u>der erste Redner **ermüdet** das Publikum</u> **überlässt**.
+Der nächste Redner ärgert sich über alle Maßen,<br>als ihm <u>der erste Redner **ermüdet** das Publikum</u> ***überlässt***.
 </div>
-<div class="column" style="margin-left:25px">
+<div class="column" style="margin-left:25px;color:#bbbbbb">
 
 The next speaker is annoyed beyond measure, as the first speaker **(tiredly | tires)** leaves the audience to him.
 
@@ -167,12 +171,11 @@ The next speaker is annoyed beyond measure, as the first speaker **(tiredly | ti
 </div>
 
 
-# LSC-Effect in AI models?
+# LSC-Effect in NNs?
 
-- Recurrent Neural Network: Yes
-- Transformer (GPT-3): No
-  - Attention mechanism has no intrinisic local preference
-- 
+- In RNNs: Yes
+- In Transformers: No ✨
+  - Explanation (?): Attention mechanism has no intrinisic local preference
 
 
 # Conclusion
