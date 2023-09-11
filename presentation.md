@@ -47,6 +47,12 @@ author: Tobias Hoffmann
 }
 </style>
 
+<style>
+.ref {
+  font-size: 60%;
+}
+</style>
+
 
 <style>
 section {
@@ -72,7 +78,7 @@ section {
 
 - Task: Given words so far, predict next word
   - e.g. prompt: "*The cat eats the* ", prediction: "*mouse*"
-- State of the art: Attention mechanism
+- State of the art: Attention mechanism<sup class="ref">*Vaswani et al. 2017*</sup>
   - Idea: Mix in *relevant* context tokens
   - Include large context without forgetfulness 
 
@@ -106,19 +112,12 @@ The cat eats the  <b>mouse.</b>
 - How much time is spent per word while reading?
 - Different metrics: *First Pass*, *Go Past*, etc.
 - Generally: Predictable word ~ short reading time
-  - I.e. we "read over" words that are predictable
-- Measured in differ
+  - We read over words that are predictable
+  - We get stuck at words that are unexpected
+- Measured in different ways, e.g. eye tracking
 
-**TODO: IMAGE**
+<img src="readingtime.png" height=100px>
 
-# Surprisal ~ Reading Time ?
-
-- Dataset: German sentences & short texts
-- GPT-3+ Surprisals via OpenAI API
-- Reading times via eye tracking
-- Yes!
-
-**TODO**
 
 # Local Syntactic Coherences
 
@@ -131,14 +130,12 @@ The coach chided <u>the player tossed the frisbee</u> ***by*** the opposing team
 
 **TODO:** BETTER EXAMPLE SENTENCE
 
-- Conflict between local and global parsing
+- Conflict between local and global parsing<sup class="ref">*Tabor et al. 2004*</sup>
 - Increased reading time at subsequent word
-- Not just syntactical
-  - Influenced by context (including visual & textual)
+- Not just syntactical, influenced by context
+  - Including visual & textual<sup class="ref">*Konieczny et al. 2009, Müller et al. 2019*</sup>
 
 # Context influences LSC-Effect
-
-**TODO: Leave this out?**
 
 <div class="row" style="font-size:75%">
 <div class="column">
@@ -170,25 +167,35 @@ The next speaker is annoyed beyond measure, as the first speaker **(tiredly | ti
 </div>
 </div>
 
+**TODO: Leave this out?**
+
+
+# Surprisal ~ Reading Time ?
+
+- Dataset: short German texts<sup class="ref">*Müller et al. 2019, Müller 2019*</sup>
+- Reading times via eye tracking
+- GPT-3.5 surprisals via OpenAI API
+- Yes! ✨
+
+**TODO: Graphic?**
+
 
 # LSC-Effect in NNs?
 
-- In RNNs: Yes
+- In RNNs: Yes<sup class="ref">*Konieczny 2005, Konieczny et al. 2009*</sup>
 - In Transformers: No ✨
   - Explanation (?): Attention mechanism has no intrinisic local preference
 
+**TODO: Graphic?**
 
 # Conclusion
-
-**TODO: SOURCES**
 
 - LLM Surprisal predicts human reading times
 - But LLMs aren't fooled by local syntactic coherences
 - 💡 LLM Surprisal as quantitative research tool
 - ⚠️ Limits of LLMs as models of human language processing
 
-
 <hr>
 
 - **AMLAP Poster:** http://dx.doi.org/10.13140/RG.2.2.15402.39363/2
-- **Slides at:** https://github.com/Garbaz/IICCSSS2023
+- **Slides at:** https://github.com/Garbaz/IICCSSS2023 
