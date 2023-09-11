@@ -172,7 +172,7 @@ The next speaker is annoyed beyond measure, as the first speaker **(tiredly | ti
 
 # Surprisal ~ Reading Time ?
 
-- Dataset: short German texts<sup class="ref">*Müller et al. 2019, Müller 2019*</sup>
+- Dataset: short German texts<sup class="ref">*from Müller et al. 2019 & Müller 2019*</sup>
 - Reading times via eye tracking
 - GPT-3.5 surprisals via OpenAI API
 - Yes! ✨
@@ -184,6 +184,8 @@ The next speaker is annoyed beyond measure, as the first speaker **(tiredly | ti
 
 - In RNNs: Yes<sup class="ref">*Konieczny 2005, Konieczny et al. 2009*</sup>
 - In Transformers: No ✨
+  - LSCs only mildly affect surprisal
+  - No modulation due to context 
   - Explanation (?): Attention mechanism has no intrinisic local preference
 
 **TODO: Graphic?**
