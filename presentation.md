@@ -177,12 +177,24 @@ The next speaker is annoyed beyond measure, as the first speaker **(tiredly | ti
 
 # LSC-Effect in NNs?
 
+<div class="row">
+<div style="float:left;width:60%;">
+
 - In RNNs: Yes<sup class="ref">*Konieczny 2005, Konieczny et al. 2009*</sup>
 - In Transformers: No ✨
   - LSCs only mildly affect surprisal
   - No modulation due to context 
-  - Explanation (?): Attention mechanism has no intrinisic local preference
+  - Explanation (?):
+  Attention mechanism has no
+  intrinisic local preference
 
+</div>
+<div style="float:left;width:40%;">
+
+<img src="gpt_no_lsc.png" height=60%>
+
+</div>
+</div>
 
 # Conclusion
 
