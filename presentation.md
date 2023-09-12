@@ -77,7 +77,7 @@ section {
 # Large Language Models
 
 - Task: Given words so far, predict next word
-  - e.g. prompt: "*The cat eats the* ", prediction: "*mouse*"
+  - e.g. prompt: *"The cat eats the* *"*, prediction: *"mouse"*
 - State of the art: Attention mechanism<sup class="ref">*Vaswani et al. 2017*</sup>
   - Idea: Mix in *relevant* context tokens
   - Include large context without forgetfulness 
@@ -116,24 +116,23 @@ The cat eats the  <b>mouse.</b>
   - We get stuck at words that are unexpected
 - Measured in different ways, e.g. eye tracking
 
-<img src="readingtime.png" height=100px>
+<img src="readingtime.png" width=99%>
 
 
 # Local Syntactic Coherences
 
 <div style="font-size:110%">
 
-The coach chided the <u>player tossed the frisbee by the opposing team</u>.
+The coach chided the player tossed the frisbee by the opposing team.
 The coach chided <u>the player tossed the frisbee</u> ***by*** the opposing team.
 
 </div>
-
-**TODO:** BETTER EXAMPLE SENTENCE
 
 - Conflict between local and global parsing<sup class="ref">*Tabor et al. 2004*</sup>
 - Increased reading time at subsequent word
 - Not just syntactical, influenced by context
   - Including visual & textual<sup class="ref">*Konieczny et al. 2009, Müller et al. 2019*</sup>
+
 
 # Context influences LSC-Effect
 
@@ -167,8 +166,6 @@ The next speaker is annoyed beyond measure, as the first speaker **(tiredly | ti
 </div>
 </div>
 
-**TODO: Leave this out?**
-
 
 # Surprisal ~ Reading Time ?
 
@@ -176,8 +173,6 @@ The next speaker is annoyed beyond measure, as the first speaker **(tiredly | ti
 - Reading times via eye tracking
 - GPT-3.5 surprisals via OpenAI API
 - Yes! ✨
-
-**TODO: Graphic?**
 
 
 # LSC-Effect in NNs?
@@ -188,7 +183,6 @@ The next speaker is annoyed beyond measure, as the first speaker **(tiredly | ti
   - No modulation due to context 
   - Explanation (?): Attention mechanism has no intrinisic local preference
 
-**TODO: Graphic?**
 
 # Conclusion
 
@@ -200,4 +194,4 @@ The next speaker is annoyed beyond measure, as the first speaker **(tiredly | ti
 <hr>
 
 - **AMLAP Poster:** http://dx.doi.org/10.13140/RG.2.2.15402.39363/2
-- **Slides at:** https://github.com/Garbaz/IICCSSS2023 
+- **Slides at:** https://github.com/Garbaz/IICCSSS2023
