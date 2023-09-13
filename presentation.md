@@ -7,10 +7,10 @@ math: mathjax
 headingDivider: 2
 
 paginate: true
-header: LLM Surprisal ~ Human Reading Time
+header: Human Reading Time ~ LLM Surprisal
 footer: Tobias Hoffmann, et al.
 
-title: LLM Surprisal ~ Human Reading Time
+title: Human Reading Time ~ LLM Surprisal
 author: Tobias Hoffmann
 ---
 
@@ -60,7 +60,7 @@ section {
 }
 </style>
 
-# LLM Surprisal ~ Human Reading Time
+# Human Reading Time ~ LLM Surprisal
 
 <!-- _footer: Tobias Hoffmann, Lars Konieczny, Henrik Lorenzen, Mateo Cortés Lafourcade -->
 
@@ -167,7 +167,7 @@ The next speaker is annoyed beyond measure, as the first speaker **(tiredly | ti
 </div>
 
 
-# Surprisal ~ Reading Time ?
+# Reading Time ~ Surprisal ?
 
 - Dataset: short German texts<sup class="ref">*from Müller et al. 2019 & Müller 2019*</sup>
 - Reading times via eye tracking
@@ -198,7 +198,7 @@ The next speaker is annoyed beyond measure, as the first speaker **(tiredly | ti
 
 # Conclusion
 
-- LLM Surprisal predicts human reading times
+- LLM Surprisals predict human reading times 
 - But LLMs aren't fooled by local syntactic coherences
 - 💡 LLM Surprisal as quantitative research tool
 - ⚠️ Limits of LLMs as models of human language processing
